@@ -1,5 +1,10 @@
 <?php
 session_start();
+$vsesion = $_SESSION["Nombre"];
+if ($vsesion == null || $vsesion == "") {
+  echo "No ha iniciado sesion";
+  die();
+}
  ?>
  <!DOCTYPE html>
  <html lang="en" dir="ltr">
@@ -10,7 +15,7 @@ session_start();
    <body>
      <div class="" style="background-color:blue; opacity: 0.5; text-align:center; margin: auto; padding: 15px; color: white; font-size:2em">
        <h2>Datos del alumno</h2>
-       <form class="" action="ralumno.php" method="post" style="padding: 15px;">
+       <form class="" action="ralumno.php" method="post" style="padding: 15px;" enctype="multipart/form-data">
          <label for="NombreAlumno">Nombre(s)</label>
          <input type="text" name="NombreAlumno">
          <label for="ApellidoPaterno">Apellido Paterno</label>
@@ -44,6 +49,18 @@ session_start();
          <input type="text" name="ContactoEmergencia">
          <label for="Parentescoemergencia">Parentesco del contacto</label>
          <input type="text" name="Parentescoemergencia"><br><br>
+         <label for="Ficha">Ingrese la ficha de inscripcion:</label>
+         <input type="file" name="Ficha" value=""><br><br>
+         <label for="Reglamento">Adjunte el reglamento firmado</label>
+         <input type="file" name="Reglamento" value=""><br><br>
+         <label for="Responsiva">Adjunte la carta Responsiva firmada</label>
+         <input type="file" name="Responsiva" value=""><br><br>
+         <label for="EscCurp">Adjunte el curp escaneado</label>
+         <input type="file" name="EscCurp" value=""><br><br>
+         <label for="Fotografia">Adjunte la Fotografia(tamaño infantil)</label>
+         <input type="file" name="Fotografia" value=""><br><br>
+         <label for="INE">Adjunte la ine del padre o tutor</label>
+         <input type="file" name="INE" value=""><br><br>
          <input type="submit" name="Registrar" value="Registrar">
        </form>
      </div>
