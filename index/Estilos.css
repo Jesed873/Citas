@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 	font-family: cursive;
 }
+.Titulo,.Titulo2 {
+	color: #00000D;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 50px;
+}
 header{
 	width: 100%;
 	height: 400px;
@@ -14,25 +20,35 @@ header{
 	background-attachment: fixed;
 	position: relative;
 }
-nav{
-	text-align: right;
-	padding: 20px 50px 0 0;
-}
 
-nav a{
-	color: #FFFFFF;
-	font-weight: 300;
-	text-decoration: none;
-	margin-right: 10px;
-}
-nav a:hover{
-	text-decoration: underline;
-}
 .Wave{
 	position:  absolute;
 	bottom: 0;
 	width: 100%;
 }
+
+.DivLogo{
+	display: flex;
+}
+
+.DivMenu{
+	
+	padding: 20px 10px 50px 50px;
+	display: flex;
+}
+margin{}
+
+
+.NavHeader a{
+	color: #FFFFFF;
+	font-weight: 300;
+	text-decoration: none;
+	margin-right: 10px;
+}
+.NavHeader a:hover{
+	text-decoration: underline;
+}
+
 /*Estilos para el header*/
 footer{
 	background: #19246e;
@@ -66,20 +82,6 @@ footer{
 }
 
 /*Estilos para el Footer*/
-
-header iframe{
-	width: 100%;
-	height: 100%;
-	border-style: none;
-}
-
-footer iframe{
-	width: 100%;
-	height: 100%;
-	border-style: none;
-	position: absolute;
-}
-
 .SeccionR{
 	max-width: 50%;
 	justify-content: space-evenly;
@@ -111,3 +113,288 @@ footer iframe{
 	max-width: 700px;
 	width: 100%;*/
 }
+
+/* inicia estilos para el formulario de Registro*/
+
+.BodyFormR {
+    margin: auto;
+    background: #FFFFFF;
+}
+.BodyFormR h1{
+	color:#F2F2eF;
+    text-align: center;
+}
+.BodyFormR h3{
+	color: #F2eFeF;
+	text-align: left;
+}
+
+.BodyFormR input{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+.BodyFormR a{
+     color: #FFFFFF; 
+}
+ .form-registrar{
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background: linear-gradient(to bottom,#a94b9e, #acb4dc);
+    border-radius: 7px;
+}
+
+.contenedor-inputs{
+    padding: 0 30px;
+    display: flex; /*elementos se comporten de forma predecible*/
+    flex-wrap: wrap; /*este contenido se va hacia abajo*/
+    justify-content: space-between;
+}
+
+.input-48{
+    width: 48%;
+}
+.input-100{
+    width: 100%;  
+ }
+.enviar{
+    background: #19236b;
+    border: 1px solid #c1dc84;
+    margin: auto;
+    padding: 1px 40px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+}
+.enviar:active{ 
+    transform: scale(1.05);/*agrandar el boton cuando se de click para eso se usa active*/
+}
+
+.form_link{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+}
+/*Acaban los estilos para el formulario de Registro*/
+
+/*Inicia los estilos para el formulario sesion*/
+
+.BodyFormS{
+    margin: auto;
+    background: #FFFFFF;
+}
+.BodyFormS h1{
+	margin-bottom: 15px;
+	color:#;
+    text-align: center;
+}
+
+.BodyFormS input{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+.BodyFormS a{
+     color: #FFFFFF; 
+}
+ .form-registrarS{
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background: linear-gradient(to bottom,#a94b9e, #acb4dc);
+    border-radius: 7px;
+}
+
+.contenedor-inputs-S{
+    padding: 0 30px;
+    display: flex; /*elementos se comporten de forma predecible*/
+    flex-wrap: wrap; /*este contenido se va hacia abajo*/
+    justify-content: space-between;
+}
+
+.input-100S{
+    width: 100%;  
+ }
+.enviarS{
+    background: #19236b;
+    border: 1px solid #c1dc84;
+    margin: auto;
+    padding: 10px 40px;
+    width: 50%;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.enviarS:active{ 
+    transform: scale(1.05);/*agrandar el boton cuando se de click para eso se usa active*/
+}
+
+.form_linkS{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+}
+
+/*Acaban los estilos para el formulario de Sesion*/
+
+/*Comienzan los estilos para el formulario de Registro Alumno*/
+ .BodyFormA{
+    margin: auto;
+    background: #FFFFFF;
+}
+.BodyFormA h1{
+	margin-bottom: 15px;
+	color:#F2eFeF;
+    text-align: center;
+}
+
+.BodyFormA input{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+ .form-registrarA{
+    width: 95%;
+    max-width: 50%;
+    margin: auto;
+   	background: linear-gradient(to bottom,#a94b9e, #acb4dc);
+    border-radius: 7px;
+}
+.contenedor-inputA{
+    padding: 0 30px;
+    display: flex; /*elementos se comporten de forma predecible*/
+    flex-wrap: wrap; /*este contenido se va hacia abajo*/
+    justify-content: space-between;
+}
+
+.input-30{
+    width: 30%;
+}
+
+.input-70{
+    width: 70%;
+}
+
+.RadioGS input{
+	display: none;
+}
+
+.RadioGS label{
+	color: #FFFFFF;
+	background: #19246e;
+	padding: 5px 15px 5px 10px;
+	display: inline-block;
+	position: relative; /* para despues suporponer l asiguiente figura*/
+	border-radius: 95%;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	-o-transition:all 0.3s ease ;
+	transition: all 0.3s ease;
+}
+
+.RadioGS label:hover{
+	background: rgba(172, 180, 220, 0.3);/*color de sombra*/
+}
+
+.RadioGS label:before{
+	content: "";/*Permite agregar valores antes de la etiqueta label*/
+	width: 10px;
+	height: 10PX;/*Se crea un cuadro antes de la etiqueta label*/
+	display: inline-block;
+	background: none;
+	border: 3px #FFFFFF;
+	border-radius: 95%;/*HAcemos el cuadro en circulo*/
+	position: absolute;
+	left: 10px;
+	top: 8px;
+}
+
+.RadioGS input[type="radio"]:Checked + label/*Cuando se seleccione la opcion de Radio se van a editar los valores.*/{
+	padding: 5px 10px;
+	background: Red;/*Color al dar clic en grupo sanguineo*/
+	border-radius: 95%;
+	color: #000;
+
+}
+.RadioGS input[type="radio"]:Checked + label:before{/*Cuando se seleccione la opcion de Radio se van a editar los valores.*/
+	display: none;
+}
+
+/*Estilos del main principal*/
+.Nosotros1{
+	display: flex;
+	justify-self: space-evenly;
+}
+
+.NosotrosImg{
+	Width: 50%;
+}
+
+.Nosotros.NosotrosTexto{
+	width: 48%;
+}
+
+.NosotrosTexto{
+	padding: 0px 0px 30px 15px;
+	text-align: justify;
+}
+
+.Portafolio{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10%;
+
+}
+
+/*Acaban los estilos para el formulario de Registro alumno*/
+/*Inicia Estilos para Vista Maestro*/
+.MenuMaestro{
+	float: right;
+	
+	float: right
+	width: 100%;
+	background: red;
+
+}
+
+.ContenidoMaestro{
+		width: 100%;
+	background: orange;
+	margin: auto;
+}
+
+.DivMenuMaestro{
+	width: 30%;
+	padding: 1em;
+	justify-self: space-evenly;
+}
+
+.DivContenidoMaestro{
+	width: 30%;
+	padding: 1em;
+	justify-self: space-evenly;
+}
+
+.DivMenuMaestro p{
+	margin: 10px 10px 10px 10px;
+	text-align: justify;
+}
+.DivContenidoMaestro p{
+	margin: 10px 10px 10px 10px;
+	text-align: justify;
+}
+/*Termina Estilos para Vista Maestro*/

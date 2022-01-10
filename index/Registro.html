@@ -7,47 +7,64 @@
 	<link rel="shorcut icon" type="image/x-icon" href="../Imagenes/LogoOscuro.ico">
 	<title>Registro</title>
 </head>
-<body>
+<body class="BodyFormR">
 	<header>
-		<iframe src="Header.html"></iframe>
+			<nav class="NavHeader">
+			<div class="DivLogo">
+				<a href="../index/Principal.html">
+					<img src="../Imagenes/LogoOscuro.png" alt="LogoOscuro" width="50%">
+				</a>
+		 	
+		 	<div class="DivMenu">
+				<a href="../index/Principal.html"> Inicio </a>
+				<a href="../index/Registro.html">Registrarme</a>
+				<a href="#">Nosotros</a>
+				<a href="#">Hola Mundo</a>
+				<a href="#">Hola Mundo x2</a>
+			</div>
+			</div>
+		</nav>
+		<section class="textos_header">
+			<div class="Wave" style="height: 150px; overflow: hidden;" >
+				<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+					<path d="M0.00,49.98 C167.32,-13.30 310.66,-10.34 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FFFFFF;">
+					</path>
+				</svg>
+			</div>
+		</section>
 	</header>
+<main>
+	<form action="insertar.php" method="post" class="form-registrar">
+	    <h1>Registro</h1>
+	    <h3>Datos del tutor:</h3>
+	    <div class="contenedor-inputs">
+	    <input type="text" name="Nombre" placeholder="Nombre" class="input-48" value="">
+	    <input type="text" name="ApellidoPaterno" placeholder="Apellido Paterno" class="input-48" value="">
+	    <input type="text" name="ApellidoMaterno" placeholder="Apellido Materno" class="input-48" value="">
+	    <input type="text" name="Telefono" placeholder="Telefono" class="input-48" value="">
+	    <input type="email" name="Correo" placeholder="Correo" class="input-100" value="">  
+	    <input type="text" name="ContraseñaTutor" placeholder="Contraseña" class="input-48" value="">
+	    <input type="submit" value="Registrar" class="enviar">	    
+	    <p class="form_link">¿Ya tienes una cuenta? <a href="../index/Sesion.html">Ingresa aquí</a></p>
+	    </div>
+    </form>
+</main>
 
-	<div class="SeccionR">
-		<div class="TituloR">
-			<H2>Registro de tutor</H2>
-		</div>
-		<form class="RegistroR" action="insertar.php" method="post">
-			<div class="DetalleR">
-				<label for="NombreTutor">Ingrese su nombre</label>
-				<input type="Text" name="NombreTutor" value="">
-			</div>
-			<div class="DetalleR">
-				<label for="ApellidoPaternoTutor">Ingrese su apellido paterno</label>
-				<input type="Text" name="ApellidoPaternoTutor" value="">
-			</div>
-			<div class="DetalleR">
-				<label for="ApellidoMaternoTutor">ngrese su apellido materno</label>
-				<input type="Text" name="ApellidoMaternoTutor" value="">
-			</div>
-			<div class="DetalleR">
-				<label for="TelefonoTutor">Ingrese su teléfono</label>
-				<input type="Text" name="TelefonoTutor" value="">
-			</div>
-			<div class="DetalleR">
-				<label for="CorreoTutor">Correo</label>
-				<input type="Text" name="CorreoTutor" value="">
-			</div>
-			<div class="DetalleR">
-				<label for="ContrasenaTutor">Ingrese contraseña</label>
-				<input type="Text" name="ContrasenaTutor" value="">
-			</div>
-			<div class="BotonR">
-				<input type="submit" name="Enviar" value="Registar">
-			</div>
-			</form>
-		</div>
-</body>
 	<footer>
-		<iframe src="Footer.html"></iframe>
+		<div class="Contenedor-footer">
+			<div class="ContenidoF">
+				<h2>Correo</h2>
+				<p>cursodeverano@email.com</p>
+			</div>
+			<div class="ContenidoF">
+				<h2>Telefono</h2>
+				<p>5512233445</p>
+			</div>
+			<div class="ContenidoF">
+				<h2>Dirección</h2>
+				<p>leon, Guanajuato CP 00000</p>
+			</div>
+		</div>
 	</footer>
+</body>
 </html>

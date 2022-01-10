@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="Estilos.css">
-</head>
-<body>
-
 	<header>
 		<nav class="NavHeader">
 			<div class="DivLogo">
@@ -15,8 +6,8 @@
 				</a>
 		 	
 		 	
-				<a href="../index/Principal.html"> Inicio </a>
-				<a href="../index/Registro.html">Registrarme</a>
+				<a href="../index/Principal.php"> Inicio </a>
+				<a href="../index/Registro.php">Registrarme</a>
 				<a href="#">Nosotros</a>
 				<a href="#">Hola Mundo</a>
 				<a href="#">Hola Mundo x2</a>
@@ -32,5 +23,3 @@
 			</div>
 		</section>
 	</header>
-</body>
-</html>
