@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Estilos.css">
+	<link rel="shorcut icon" type="image/x-icon" href="../Imagenes/LogoOscuro.ico">
+	<title>Registro</title>
+</head>
+<body class="BodyFormA">
+	<header>
+			<nav class="NavHeader">
+			<div class="DivLogo">
+				<a href="../index/Principal.html">
+					<img src="../Imagenes/LogoOscuro.png" alt="LogoOscuro" width="50%">
+				</a>
+		 	
+		 	<div class="DivMenu">
+				<a href="../index/Principal.html"> Inicio </a>
+				<a href="../index/Registro.html">Registrarme</a>
+				<a href="#">Nosotros</a>
+				<a href="#">Hola Mundo</a>
+				<a href="#">Hola Mundo x2</a>
+			</div>
+			</div>
+		</nav>
+		<section class="textos_header">
+			<div class="Wave" style="height: 150px; overflow: hidden;" >
+				<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+					<path d="M0.00,49.98 C167.32,-13.30 310.66,-10.34 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FFFFFF;">
+					</path>
+				</svg>
+			</div>
+		</section>
+	</header>
+<main>
+	<form action="ralumno.php" method="post" class="form-registrarA">
+	    <h1>Registrar Alumno</h1>
+	    <div class="contenedor-inputA">
+	    <input type="text" name="NombreAlumno" placeholder="Nombre" class="input-30" value="">
+	    <input type="text" name="ApellidoPaterno" placeholder="Apellido Paterno" class="input-30" value="">
+	    <input type="text" name="ApellidoMaterno" placeholder="Apellido Materno" class="input-30" value="">
+			<input type="text" name="CURP" placeholder="CURP" class="input-70" value="">
+			<label for="FechaNacimiento">Fecha de Nacimiento</label><br>
+			<input type="date"b name="FechaNacimiento"  class="input-48" value="">
+			<label for="Seguro">Institución de Seguros</label>
+			<div class="ComboSeguro">
+ 			<select name="Seguro" id="">
+ 				<option disabled="">Seleccione una opción</option>
+         <option value="IMSS">IMSS</option>
+         <option value="ISSSTE">ISSSTE</option>
+         <option value="ISSEMyM">ISSEMyM</option>
+         <option value="SEDENA">SEDENA</option>
+         <option value="OTRO">OTRO</option>
+         <input type="text" name="Seguro" placeholder="Institicion de Seguros" class="input-48" value="">
+      </select>
+      </div>
+      <div class="RadioGS">
+				<P>Grupo Sanguineo</p>
+				<input type="radio" name="GrupoSanguineo" value="A+" id="GrupoSanguineoA+">
+				<label for="GrupoSanguineoA+">A+</label>
+	      <input type="radio" name="GrupoSanguineo" value="B+" id="GrupoSanguineoB+">
+	      <label for="GrupoSanguineoB+">B+</label>
+	      <input type="radio" name="GrupoSanguineo" value="B-" id="GrupoSanguineoB-">
+	      <label for="GrupoSanguineoB-">B-</label>
+	      <input type="radio" name="GrupoSanguineo" value="A-" id="GrupoSanguineoA-">
+	      <label for="GrupoSanguineoA-">A-</label>
+	      <input type="radio" name="GrupoSanguineo" value="AB+" id="GrupoSanguineoAB+">
+	      <label for="GrupoSanguineoAB+">AB+</label>
+	      <input type="radio" name="GrupoSanguineo" value="AB-" id="GrupoSanguineoAB-">
+	      <label for="GrupoSanguineoAB-">AB-</label>
+	      <input type="radio" name="GrupoSanguineo" value="O+" id="GrupoSanguineoO+">
+	      <label for="GrupoSanguineoO+">O+</label>
+	      <input type="radio" name="GrupoSanguineo" value="O-" id="GrupoSanguineoO-">
+	      <label for="GrupoSanguineoO-">O-</label>
+      </div>
+			<h3>Datos contacto de emergencia</h3>
+			<input type="text" name="ContactoEmergenciaa" placeholder="Nombre " class="input-48" value="">
+			<input type="text" name="Telefonoemergencia" placeholder="Telefono Emergencia" class="input-48" value="">
+			<input type="text" name="Ficha" placeholder="Parentesco" class="input-48" value="">
+			<label for="Ficha">Ingrese la ficha de inscripcion:</label>
+			<input type="File" name="Ficha" class="" value="">
+			<label for="Reglamento">Adjunte archivo de reglamento firmado:</label>
+			<input type="File" name="Reglamento" class="" value="">
+			<label for="Responsiva">Adjunte archivo "Responsiva":</label>
+			<input type="File" name="Responsiva" class="" value="">
+			<label for="EscCurp">Adjunte CURP escaneado":</label>
+			<input type="File" name="EscCurp" class="" value="">
+			<label for="Fotografia">Adjunte fotografia":</label>
+			<input type="File" name="Fotografia" class="" value="">
+			<label for="INE">Adjunte INE del padre o tutor":</label>
+			<input type="File" name="INE" class="" value="">
+	    <input type="submit" value="Registrar" class="enviarS">
+	    </div>
+    </form>
+</main>
+
+	<footer>
+		<div class="Contenedor-footer">
+			<div class="ContenidoF">
+				<h2>Correo</h2>
+				<p>cursodeverano@email.com</p>
+			</div>
+			<div class="ContenidoF">
+				<h2>Telefono</h2>
+				<p>5512233445</p>
+			</div>
+			<div class="ContenidoF">
+				<h2>Dirección</h2>
+				<p>leon, Guanajuato CP 00000</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
